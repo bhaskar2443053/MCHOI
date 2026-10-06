@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mchoi"
+version = "1.0.0"
+description = "Multi-camera hand-object interaction capture and processing: rig calibration, recording, MANO hand, right arm and object pose, MCHOI dataset export"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+authors = [{ name = "The MCHOI authors" }]
+keywords = ["hand pose", "MANO", "hand-object interaction", "multi-view", "RGB-D", "ArUco", "motion capture"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: Microsoft :: Windows",
+    "Topic :: Scientific/Engineering :: Image Recognition",
+]
+# Exact, tested versions are in environment/; these are the minimum to import the core modules.
+dependencies = ["numpy", "scipy", "opencv-python"]
+
+[project.optional-dependencies]
+sdk = ["pillow", "av", "trimesh", "pyrealsense2", "cv2_enumerate_cameras"]
+deck = ["lxml", "latex2mathml", "matplotlib"]
+test = ["pytest"]
+
+[project.scripts]
+mchoi-pipeline = "mchoi.pipeline:main"
+mchoi-reproduce = "mchoi.reproduce:main"
+
+[project.gui-scripts]
+mchoi-calibration = "mchoi.calibration.__main__:main"
+mchoi-recorder = "mchoi.recorder.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

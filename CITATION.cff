@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this code or the MCHOI dataset, please cite it as below."
+title: "mchoi: multi-camera hand-object interaction capture and processing"
+type: software
+version: 1.0.0
+date-released: 2026-10-02
+license: MIT
+# TODO before publishing: authors, affiliation, repository URL and the dataset DOI.
+authors:
+  - name: "The MCHOI authors"
+keywords:
+  - hand pose
+  - MANO
+  - hand-object interaction
+  - multi-view
+  - motion capture

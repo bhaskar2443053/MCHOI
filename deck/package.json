@@ -1,0 +1,10 @@
+{
+  "name": "mchoi-deck",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Builds the MCHOI pipeline slides (docs/MCHOI_v1.0_pipeline.pptx in the dataset); run via python deck/build.py",
+  "license": "MIT",
+  "dependencies": {
+    "pptxgenjs": "3.12.0"
+  }
+}

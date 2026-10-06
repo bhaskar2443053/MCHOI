@@ -1,0 +1,9 @@
+{
+  "_comment": "Copy to configs/paths.local.json (git-ignored) and edit. Environment variables MCHOI_* override these. Omit a key to use the default.",
+  "data": "D:/mchoi-data",
+  "models": "C:/path/to/mchoi/models",
+  "mano": "C:/path/to/mchoi/models/mano",
+  "wilor_src": "C:/path/to/mchoi/third_party/WiLoR",
+  "sdk_python": "C:/path/to/mchoi/.venv-sdk/Scripts/python.exe",
+  "wilor_python": "C:/path/to/mchoi/.venv-wilor/Scripts/python.exe"
+}

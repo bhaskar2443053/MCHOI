@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "zed": {
+    "exposure_percent": 30,
+    "gain": 60
+  },
+  "realsense": {
+    "261222078090": {
+      "color_exposure": 156,
+      "color_gain": 128,
+      "depth_exposure_us": 8500,
+      "depth_gain": 16
+    },
+    "261222076358": {
+      "color_exposure": 156,
+      "color_gain": 128,
+      "depth_exposure_us": 8500,
+      "depth_gain": 16
+    }
+  }
+}

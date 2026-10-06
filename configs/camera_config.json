@@ -1,0 +1,13 @@
+{
+  "realsense_slots": {
+    "d435": {
+      "serial": "261222078090",
+      "label": "RealSense D435 #1"
+    },
+    "d455": {
+      "serial": "261222076358",
+      "label": "RealSense D435 #2"
+    }
+  },
+  "note": "View keys are stable session identifiers. The d455 slot now contains the replacement D435; physical devices are selected by serial number."
+}

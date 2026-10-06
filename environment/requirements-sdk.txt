@@ -1,0 +1,19 @@
+# SDK environment (.venv-sdk): Python 3.14, Windows 11 x64. Exact versions used for MCHOI v1.0.
+# Install the ZED SDK 5.3 first: the pyzed wheel loads its DLLs. scripts/setup_sdk_env.ps1 runs everything.
+numpy==2.4.5
+scipy==1.17.1
+opencv-python==4.13.0.92
+pillow==12.2.0
+av==18.1.0
+trimesh==4.12.2
+pyrealsense2==2.58.4.10922
+cv2_enumerate_cameras==1.3.3
+pyzed @ https://download.stereolabs.com/zedsdk/5.3/whl/win_amd64/pyzed-5.3-cp314-cp314-win_amd64.whl#sha256=d52446c25e3ab9b41b699466b74babeabae9bf94081e5ba0da8ef63d2e7ac9bf
+
+# Slides (deck/build.py; matplotlib only for --equations)
+lxml==6.1.3
+latex2mathml==3.81.1
+matplotlib==3.11.1
+
+# Tests
+pytest==9.0.3
